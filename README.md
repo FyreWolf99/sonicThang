@@ -1,7 +1,7 @@
 # Sonic Thing
 
 ## Prerequesites
-- SDL2 <https://www.libsdl.org/>
+- SDL2 <https://www.libsdl.org/> *Included in project*
 
 ## Build Directions
 
