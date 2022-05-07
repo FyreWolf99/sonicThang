@@ -24,7 +24,7 @@ void player::update()
 		else
 			vel.x = 0;
 	}
-	else if ((inp < 0 && vel.x > 0) || (inp > 0 && vel.x < 0))
+	else if ((inp < 0 && vel.x > 0) || (inp > 0 && vel.x < 0) || (inps->rht && inps->lft))
 		vel.x *= -0.9375f;
 	else if (vel.x < PL_MAX_SPD || vel.x > -PL_MAX_SPD)
 		vel.x += inp * PL_ACC;
