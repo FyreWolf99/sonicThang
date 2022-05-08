@@ -38,9 +38,9 @@
 2. Download and install SDL2 from <https://www.libsdl.org/>
 3. Download and install GIT from <https://git-scm.com/>
 4. Open a terminal and run `git clone --recursive https://github.com/FyreWolf99/sonicThang`
-4. Run the following:
+5. Run the following:
 	- `cd sonicThang/`
 	- `mkdir build`
 	- `cd build/`
 	- `cmake ..` **This may be wrong**
-5. Open the resulting .xcodeproj file in xcode
+6. Open the resulting .xcodeproj file in xcode
