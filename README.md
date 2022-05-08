@@ -18,7 +18,7 @@
 4. `make -j4`
 
 ### Windows
-**This will be a rough guide, bc I don't know how windows works**
+**This will be a rough guide, as I haven't a clue how windows works**
 
 1. Download and install CMAKE from <https://cmake.org/>
 2. Download and install SDL2 from <https://www.libsdl.org/>
