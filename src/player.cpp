@@ -5,6 +5,16 @@ player::player(inpState* inputs, bool* runn, app* appl)
 	inps = inputs;
 	run = runn;
 	application = appl;
+	
+	for (int i = 0; i < 6; i++)
+	{
+		surfaces[i] = IMG_Load(images[i]);
+		
+		if (surfaces[i] == NULL)
+			fprintf(stderr, "Loading image %d has failed. ERR: %s\n", i, IMG_GetError());
+	}
+
+	text = SDL_CreateTextureFromSurface(application->renderer, surfaces[0]);
 
 	rect = (SDL_Rect) {0, HEIGHT / 2, PL_SIZE, PL_SIZE};
 }
@@ -24,9 +34,9 @@ void player::update()
 		vel.x *= -0.5f;
 	else if (inp == 0 && revTimer <= 0)
 	{
-		if (vel.x >= 25)
+		if (vel.x >= PL_FRICTION * 2)
 			vel.x -= PL_FRICTION;
-		else if (vel.x <= -25)
+		else if (vel.x <= PL_FRICTION * -2)
 			vel.x += PL_FRICTION;
 		else
 			vel.x = 0;
@@ -71,6 +81,26 @@ void player::draw()
 {
 	rect = (SDL_Rect) {(int) pos.x, (int) pos.y, PL_SIZE, PL_SIZE};
 	
+	if (vel.x != 0)
+	{
+		animFrame = (animFrame + 1) % 30;
+		if (animFrame % 5 == 0)
+			surfaceIndex = animFrame / 5;
+	}
+	
+	SDL_RendererFlip flip;
+	if (vel.x <= 0)
+	{
+		flip = SDL_FLIP_HORIZONTAL;
+	}
+	else 
+	{
+		flip = SDL_FLIP_NONE;
+	}
+	
+	text = SDL_CreateTextureFromSurface(application->renderer, surfaces[surfaceIndex]);
+	
 	SDL_SetRenderDrawColor(application->renderer, 0xFF, 0xFF, 0xFF, 0xFF);
-	SDL_RenderFillRect(application->renderer, &rect);
+	// SDL_RenderFillRect(application->renderer, &rect);
+	SDL_RenderCopyEx(application->renderer, text, NULL, &rect, 0, 0, flip);
 }
