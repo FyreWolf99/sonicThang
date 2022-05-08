@@ -22,4 +22,5 @@ class player
 		vec2 vel;
 
 		bool isOnFloor = false;
+		int revTimer = PL_REV_BUFF;
 };

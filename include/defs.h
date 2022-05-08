@@ -10,5 +10,6 @@
 #define PL_FRICTION 1
 #define PL_GRAV 1
 #define PL_JMP_SPD 20
+#define PL_REV_BUFF 15
 
 #endif

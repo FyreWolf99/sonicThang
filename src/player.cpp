@@ -14,8 +14,15 @@ void player::update()
 	// Horizontal Input
 	int inp = inps->rht - inps->lft;
 	
-	// Horizontal Velocity
 	if (inp == 0)
+		revTimer--;
+	else
+		revTimer = PL_REV_BUFF;
+	
+	// Horizontal Velocity
+	if ((inp < 0 && vel.x > 0) || (inp > 0 && vel.x < 0))
+		vel.x *= -0.9375f;
+	else if (inp == 0 && revTimer <= 0)
 	{
 		if (vel.x >= 25)
 			vel.x -= PL_FRICTION;
@@ -24,8 +31,6 @@ void player::update()
 		else
 			vel.x = 0;
 	}
-	else if ((inp < 0 && vel.x > 0) || (inp > 0 && vel.x < 0) || (inps->rht == inps->lft))
-		vel.x *= -0.9375f;
 	else if (vel.x < PL_MAX_SPD || vel.x > -PL_MAX_SPD)
 		vel.x += inp * PL_ACC;
 
