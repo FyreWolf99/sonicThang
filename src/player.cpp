@@ -21,7 +21,7 @@ void player::update()
 	
 	// Horizontal Velocity
 	if ((inp < 0 && vel.x > 0) || (inp > 0 && vel.x < 0))
-		vel.x *= -0.9375f;
+		vel.x *= -0.5f;
 	else if (inp == 0 && revTimer <= 0)
 	{
 		if (vel.x >= 25)
