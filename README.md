@@ -28,3 +28,15 @@
 	- `cd build\`
 	- `cmake ..` I think, but I have no clue from this point
 5. Then open the resulting .vsproj file in visual studio *I think*
+
+### OSX
+**Again, I haven't a clue**
+
+1. Download and install CMAKE from <https://cmake.org/>
+2. Download and install SDL2 from <https://www.libsdl.org/>
+3. Open the project in cmd
+4. Run the following:
+	- `mkdir build`
+	- `cd build/`
+	- `cmake ..`
+5. Open the resulting .xcodeproj file in xcode *I think*
