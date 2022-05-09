@@ -8,6 +8,7 @@ plat::plat(app* application)
     
     platforms[0] = (platform) {vec2(1500, 1000), 200};
     platforms[1] = (platform) {vec2(500, 900), 500};
+    platforms[2] = (platform) {vec2(2000, 900), 8000};
 }
 
 int plat::isColliding(vec2* pos)

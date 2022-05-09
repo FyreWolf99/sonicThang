@@ -20,5 +20,5 @@ class plat
         platform* platforms;
         app* application;
         
-        const int platCount = 2;
+        const int platCount = 3;
 };

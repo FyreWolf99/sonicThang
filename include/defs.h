@@ -12,6 +12,9 @@
 #define PL_JMP_SPD 20
 #define PL_REV_BUFF 15
 
+#define WORLD_WIDTH 20000
+#define WORLD_HEIGHT 1080
+
 #define OBS_HOP_BUFF 5
 
 #endif

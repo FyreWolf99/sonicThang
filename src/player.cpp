@@ -56,11 +56,16 @@ void player::update()
 	
 	// Update Position
 	pos += vel;
-	
-	// Use Edge of Screen as Walls
-	if (pos.x > WIDTH - PL_SIZE)
+
+	if (inps->dwn)
 	{
-		pos.x = WIDTH - PL_SIZE;
+		pos.y += PL_SIZE;
+	}
+	
+	// Use Edge of World as Walls
+	if (pos.x > WORLD_WIDTH - PL_SIZE)
+	{
+		pos.x = WORLD_WIDTH - PL_SIZE;
 		vel.x *= -1;
 	}
 	else if (pos.x < 0)

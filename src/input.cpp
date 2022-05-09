@@ -33,6 +33,10 @@ void input::poll()
 					case SDLK_LEFT:
 						inp.lft = true;
 						break;
+					case SDLK_DOWN:
+					case SDLK_s:
+						inp.dwn = true;
+						break;
 					case SDLK_SPACE:
 					case SDLK_w:
 					case SDLK_UP:
@@ -50,6 +54,10 @@ void input::poll()
 					case SDLK_a:
 					case SDLK_LEFT:
 						inp.lft = false;
+						break;
+					case SDLK_DOWN:
+					case SDLK_s:
+						inp.dwn = false;
 						break;
 				}
 				break;

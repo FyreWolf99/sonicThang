@@ -4,7 +4,7 @@
 
 typedef struct inpState
 {
-	bool lft = false, rht = false, jmp = false;
+	bool lft = false, rht = false, jmp = false, dwn = false;
 } inpState;
 
 namespace input
