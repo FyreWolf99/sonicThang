@@ -1,6 +1,6 @@
 #include "player.hpp"
 
-player::player(inpState* inputs, bool* runn, app* appl)
+player::player(inpState* inputs, bool* runn, app* appl, obs* obstacles)
 {
 	inps = inputs;
 	run = runn;
@@ -17,6 +17,8 @@ player::player(inpState* inputs, bool* runn, app* appl)
 	text = SDL_CreateTextureFromSurface(application->renderer, surfaces[0]);
 
 	rect = (SDL_Rect) {0, HEIGHT / 2, PL_SIZE, PL_SIZE};
+	
+	this->obstacles = obstacles;
 }
 
 void player::update()
@@ -75,6 +77,8 @@ void player::update()
 		vel.y = 0;
 		isOnFloor = true;
 	}
+	
+	obstacles->collide(&pos, &vel);
 }
 
 void player::draw()

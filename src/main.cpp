@@ -1,6 +1,7 @@
 #include "render.hpp"
 #include "input.hpp"
 #include "player.hpp"
+#include "obs.hpp"
 
 int main(void)
 {
@@ -11,7 +12,8 @@ int main(void)
 
 	inpState* inp = input::init(&running);
 	
-	player p(inp, &running, application);
+	obs obstacles(application);
+	player p(inp, &running, application, &obstacles);
 	
 	while (running)
 	{
@@ -24,6 +26,9 @@ int main(void)
 		
 			// Draw Player
 			p.draw();
+			
+			// Draw Obstacles
+			obstacles.draw();
 
 		// Stop Rendering
 		render::endDraw();

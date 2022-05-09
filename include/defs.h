@@ -12,4 +12,6 @@
 #define PL_JMP_SPD 20
 #define PL_REV_BUFF 15
 
+#define OBS_HOP_BUFF 5
+
 #endif
