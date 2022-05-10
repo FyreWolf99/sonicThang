@@ -63,9 +63,9 @@ void player::update()
 	}
 	
 	// Use Edge of World as Walls
-	if (pos.x > WORLD_WIDTH - PL_SIZE)
+	if (pos.x > WIDTH - PL_SIZE)
 	{
-		pos.x = WORLD_WIDTH - PL_SIZE;
+		pos.x = WIDTH - PL_SIZE;
 		vel.x *= -1;
 	}
 	else if (pos.x < 0)
