@@ -1,0 +1,8 @@
+/home/fyre/Documents/code/Godot/.mono/temp/obj/Debug/sonicThang.csprojAssemblyReference.cache
+/home/fyre/Documents/code/Godot/.mono/temp/obj/Debug/sonicThang.AssemblyInfoInputs.cache
+/home/fyre/Documents/code/Godot/.mono/temp/obj/Debug/sonicThang.AssemblyInfo.cs
+/home/fyre/Documents/code/Godot/.mono/temp/obj/Debug/sonicThang.csproj.CoreCompileInputs.cache
+/home/fyre/Documents/code/Godot/.mono/temp/bin/Debug/sonicThang.dll
+/home/fyre/Documents/code/Godot/.mono/temp/bin/Debug/sonicThang.pdb
+/home/fyre/Documents/code/Godot/.mono/temp/obj/Debug/sonicThang.dll
+/home/fyre/Documents/code/Godot/.mono/temp/obj/Debug/sonicThang.pdb
