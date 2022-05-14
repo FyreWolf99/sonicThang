@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/home/fyre/Documents/code/Godot/sonicThang.csproj": {}
+    "/home/fyre/git/sonicThang/sonicThang.csproj": {}
   },
   "projects": {
-    "/home/fyre/Documents/code/Godot/sonicThang.csproj": {
+    "/home/fyre/git/sonicThang/sonicThang.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/fyre/Documents/code/Godot/sonicThang.csproj",
+        "projectUniqueName": "/home/fyre/git/sonicThang/sonicThang.csproj",
         "projectName": "sonicThang",
-        "projectPath": "/home/fyre/Documents/code/Godot/sonicThang.csproj",
+        "projectPath": "/home/fyre/git/sonicThang/sonicThang.csproj",
         "packagesPath": "/home/fyre/.nuget/packages/",
-        "outputPath": "/home/fyre/Documents/code/Godot/.mono/temp/obj/",
+        "outputPath": "/home/fyre/git/sonicThang/.mono/temp/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/fyre/.config/NuGet/NuGet.Config"
+          "/home/fyre/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net472"
@@ -24,6 +24,7 @@
         },
         "frameworks": {
           "net472": {
+            "targetAlias": "net472",
             "projectReferences": {}
           }
         },
@@ -35,7 +36,16 @@
       },
       "frameworks": {
         "net472": {
-          "runtimeIdentifierGraphPath": "/usr/lib/mono/msbuild/Current/bin/RuntimeIdentifierGraph.json"
+          "targetAlias": "net472",
+          "dependencies": {
+            "Microsoft.NETFramework.ReferenceAssemblies": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.2, )",
+              "autoReferenced": true
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.102/RuntimeIdentifierGraph.json"
         }
       }
     }

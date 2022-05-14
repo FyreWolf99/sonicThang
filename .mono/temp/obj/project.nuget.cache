@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "y6OZwq6A/m5du8iQ04kqmhOEBMdrHSl3bI71dh+1Df8YvJSBdEfuXCGzDJhi10Pa7t3zxHomRhLu6fJKyXpsog==",
+  "dgSpecHash": "DHzCQiF1+mKiR9eYJviY8pnsrs2vGqJqlpNHNYure5J4m25GbUdmXTG4vJRE3AbrSD2/2pDnKLeVt8jhLYeMog==",
   "success": true,
-  "projectFilePath": "/home/fyre/Documents/code/Godot/sonicThang.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "/home/fyre/git/sonicThang/sonicThang.csproj",
+  "expectedPackageFiles": [
+    "/home/fyre/.nuget/packages/microsoft.netframework.referenceassemblies/1.0.2/microsoft.netframework.referenceassemblies.1.0.2.nupkg.sha512",
+    "/home/fyre/.nuget/packages/microsoft.netframework.referenceassemblies.net472/1.0.2/microsoft.netframework.referenceassemblies.net472.1.0.2.nupkg.sha512"
+  ],
   "logs": []
 }

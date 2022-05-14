@@ -6,3 +6,12 @@
 /home/fyre/Documents/code/Godot/.mono/temp/bin/Debug/sonicThang.pdb
 /home/fyre/Documents/code/Godot/.mono/temp/obj/Debug/sonicThang.dll
 /home/fyre/Documents/code/Godot/.mono/temp/obj/Debug/sonicThang.pdb
+/home/fyre/git/sonicThang/.mono/temp/bin/Debug/sonicThang.dll
+/home/fyre/git/sonicThang/.mono/temp/bin/Debug/sonicThang.pdb
+/home/fyre/git/sonicThang/.mono/temp/obj/Debug/sonicThang.csproj.AssemblyReference.cache
+/home/fyre/git/sonicThang/.mono/temp/obj/Debug/sonicThang.GeneratedMSBuildEditorConfig.editorconfig
+/home/fyre/git/sonicThang/.mono/temp/obj/Debug/sonicThang.AssemblyInfoInputs.cache
+/home/fyre/git/sonicThang/.mono/temp/obj/Debug/sonicThang.AssemblyInfo.cs
+/home/fyre/git/sonicThang/.mono/temp/obj/Debug/sonicThang.csproj.CoreCompileInputs.cache
+/home/fyre/git/sonicThang/.mono/temp/obj/Debug/sonicThang.dll
+/home/fyre/git/sonicThang/.mono/temp/obj/Debug/sonicThang.pdb
